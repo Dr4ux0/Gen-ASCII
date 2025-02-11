@@ -82,9 +82,3 @@ Este projeto está licenciado sob a licença MIT. Consulte o arquivo [LICENSE](L
 - **Versão**: 0.1
 - **Email**: [dr4ux0@proton.me](dr4ux0@proton.me)
 ```
-
-### Como salvar o arquivo `README.md`:
-
-1. Abra um editor de texto (como VSCode, Notepad++, ou qualquer outro).
-2. Copie e cole o conteúdo acima no editor.
-3. Salve o arquivo com o nome `README.md` no mesmo diretório onde o script Python está localizado.
