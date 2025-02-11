@@ -4,12 +4,12 @@ import pyfiglet
 import os
 import platform
 
+# Constantes
+SEPARATOR = "=" * 80
+
 def clear():
     system_name = platform.system().lower()
-    if system_name == "windows":
-        os.system("cls")
-    else:
-        os.system("clear")
+    os.system("cls" if system_name == "windows" else "clear")
 
 def welcome():
     clear()
@@ -47,9 +47,21 @@ def display_fonts():
     print(f"\nTotal de fontes válidas: {len(FONTS)} fontes disponíveis.")
     print(f"Se preferir, pressione ENTER para gerar em todas as fontes.")
 
+def save_to_file(text, font, filename="output.txt"):
+    with open(filename, "a") as file:
+        file.write(f"\nFonte: {font}\n")
+        file.write(generate_ascii(text, font))
+        file.write("\n" + SEPARATOR + "\n")
+
 def main():
     welcome()
-    user_text = input("Digite o texto para converter em ASCII Art: ")
+    
+    # Validação do texto
+    while True:
+        user_text = input("Digite o texto para converter em ASCII Art: ").strip()
+        if user_text:
+            break
+        print("Por favor, insira um texto válido.")
 
     display_fonts()
 
@@ -58,13 +70,25 @@ def main():
     if font_choice.isdigit() and 1 <= int(font_choice) <= len(FONTS):
         chosen_font = FONTS[int(font_choice) - 1]
         print(f"\nGerando ASCII Art usando a fonte: {chosen_font}")
-        print(generate_ascii(user_text, chosen_font))
+        ascii_art = generate_ascii(user_text, chosen_font)
+        print(ascii_art)
+        
+        save_option = input("\nDeseja salvar o resultado em um arquivo? (s/n): ").strip().lower()
+        if save_option == 's':
+            save_to_file(user_text, chosen_font)
+            print(f"Arte ASCII salva em 'output.txt'.")
     else:
         print("\nGerando ASCII Art em todas as fontes disponíveis:\n")
         for font in FONTS:
             print(f"\nFonte: {font}")
-            print(generate_ascii(user_text, font))
-            print("=" * 80)
+            ascii_art = generate_ascii(user_text, font)
+            print(ascii_art)
+            print(SEPARATOR)
+            
+            save_option = input("\nDeseja salvar o resultado em um arquivo? (s/n): ").strip().lower()
+            if save_option == 's':
+                save_to_file(user_text, font)
+                print(f"Arte ASCII salva em 'output.txt'.")
 
 if __name__ == "__main__":
     main()
