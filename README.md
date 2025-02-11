@@ -24,7 +24,7 @@ Este é um script Python que permite gerar arte ASCII a partir de um texto forne
 1. **Execute o script**:
    - Navegue até o diretório onde o script está localizado e execute o seguinte comando:
      ```bash
-     python3 ascii_art_generator.py
+     python3 gen-ascii.py
      ```
 
 2. **Digite o texto**:
@@ -39,7 +39,7 @@ Este é um script Python que permite gerar arte ASCII a partir de um texto forne
 ## Exemplo de Uso
 
 ```bash
-$ python3 ascii_art_generator.py
+$ python3 gen-ascii.py
 
      ██████╗ ███████╗███╗   ██╗     █████╗ ███████╗ ██████╗██╗██╗
     ██╔════╝ ██╔════╝████╗  ██║    ██╔══██╗██╔════╝██╔════╝██║██║
@@ -80,7 +80,7 @@ Este projeto está licenciado sob a licença MIT. Consulte o arquivo [LICENSE](L
 
 - **Autor**: Dr4ux0
 - **Versão**: 0.1
-- **Email**: [seu_email@example.com](mailto:seu_email@example.com)
+- **Email**: [dr4ux0@proton.me](dr4ux0@proton.me)
 ```
 
 ### Como salvar o arquivo `README.md`:
