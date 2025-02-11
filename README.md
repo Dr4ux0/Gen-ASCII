@@ -1,6 +1,6 @@
 # ASCII Art Generator
 
-Este é um script Python que permite gerar arte ASCII a partir de um texto fornecido pelo usuário. O script utiliza a biblioteca `pyfiglet` para criar diferentes estilos de arte ASCII com uma variedade de fontes disponíveis. O usuário pode escolher uma fonte específica ou gerar arte ASCII em todas as fontes disponíveis.
+Este é um script Python que permite gerar arte ASCII a partir de um texto fornecido pelo usuário. O script utiliza a biblioteca `pyfiglet` para criar diferentes estilos de arte ASCII com uma variedade de fontes disponíveis
 
 ## Requisitos
 
@@ -28,10 +28,10 @@ Este é um script Python que permite gerar arte ASCII a partir de um texto forne
      ```
 
 2. **Digite o texto**:
-   - O script exibirá uma mensagem de boas-vindas e solicitará que você insira o texto que deseja converter em arte ASCII.
+   - O script exibirá uma mensagem e solicitará que você insira o texto que deseja converter em arte ASCII.
 
 3. **Escolha a fonte**:
-   - O script exibirá uma lista de fontes disponíveis. Você pode escolher uma fonte específica digitando o número correspondente ou pressionar `ENTER` para gerar arte ASCII em todas as fontes disponíveis.
+   - Uma lista de fontes será mostrada. Você pode escolher uma fonte específica digitando o número correspondente ou pressionar `ENTER` para gerar arte ASCII em todas as fontes disponíveis.
 
 4. **Visualize a arte ASCII**:
    - O script gerará a arte ASCII com base na sua escolha e a exibirá no terminal.
