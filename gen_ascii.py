@@ -34,7 +34,7 @@ def display_fonts():
     print(f"\nTotal de fontes válidas: {len(FONTS)} fontes disponíveis.")
     print(f"Se preferir, pressione ENTER para gerar em todas as fontes.")
 
-def save_to_file(text, font, filename="output.txt"):
+def save_to_file(text, font, filename="arts.txt"):
     with open(filename, "a") as file:
         file.write(f"\nFonte: {font}\n")
         file.write(generate_ascii(text, font))
@@ -72,7 +72,7 @@ def main():
         print(ascii_art)
         if save_to_file_flag:
             save_to_file(user_text, chosen_font)
-            print(f"Arte ASCII salva em 'output.txt'.")
+            print(f"Arte ASCII salva em 'arts.txt'.")
     else:
         print("\nGerando ASCII Art em todas as fontes disponíveis:\n")
         for font in FONTS:
@@ -83,7 +83,7 @@ def main():
             if save_to_file_flag:
                 save_to_file(user_text, font)
         if save_to_file_flag:
-            print(f"\nTodas as artes ASCII foram salvas em 'output.txt'.")
+            print(f"\nTodas as artes ASCII foram salvas em 'arts.txt'.")
 
 if __name__ == "__main__":
     main()
