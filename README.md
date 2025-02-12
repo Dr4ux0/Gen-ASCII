@@ -52,7 +52,7 @@ Este é um script Python que permite gerar arte ASCII a partir de um texto forne
 
      ```bash
      python3 -m venv meu_ambiente
-     source meu_ambiente/bin/activate  # Linux/macOS
+     source meu_ambiente/bin/activate  # Linux/macOS/Termux
      meu_ambiente\Scripts\activate     # Windows (CMD)
      meu_ambiente\Scripts\Activate.ps1 # Windows (PowerShell)
 
