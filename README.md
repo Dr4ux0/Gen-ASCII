@@ -1,5 +1,13 @@
 # ASCII Art Generator
 
+     ██████╗ ███████╗███╗   ██╗     █████╗ ███████╗ ██████╗██╗██╗
+    ██╔════╝ ██╔════╝████╗  ██║    ██╔══██╗██╔════╝██╔════╝██║██║
+    ██║  ███╗█████╗  ██╔██╗ ██║    ███████║███████╗██║     ██║██║
+    ██║   ██║██╔══╝  ██║╚██╗██║    ██╔══██║╚════██║██║     ██║██║
+    ╚██████╔╝███████╗██║ ╚████║    ██║  ██║███████║╚██████╗██║██║
+     ╚═════╝ ╚══════╝╚═╝  ╚═══╝    ╚═╝  ╚═╝╚══════╝ ╚═════╝╚═╝╚═╝
+                    Created By Dr4ux0 Version 0.1
+
 Este é um script Python que permite gerar arte ASCII a partir de um texto fornecido pelo usuário. O script utiliza a biblioteca `pyfiglet` para criar diferentes estilos de arte ASCII com uma variedade de fontes disponíveis.
 
 ## Requisitos
